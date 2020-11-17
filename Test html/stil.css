@@ -1,0 +1,26 @@
+@-webkit-keyframes argh-my-eyes {
+    0%   { background-color: #4da6ff; }
+    49% { background-color: #4da6ff; }
+    50% { background-color: #4da6ff; }
+    99% { background-color: #4da6ff; }
+    100% { background-color: #4da6ff; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: #4da6ff; }
+    49% { background-color:  #ffb3e6; }
+    50% { background-color: #4da6ff; }
+    99% { background-color: #ffb3e6; }
+    100% { background-color: #4da6ff; }
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: #4da6ff; }
+    49% { background-color: #ffb3e6; }
+    50% { background-color: #4da6ff; }
+    99% { background-color: #4da6ff; }
+    100% { background-color: #4da6ff; }
+  }
+  body {
+  -webkit-animation: argh-my-eyes 1s infinite;
+  -moz-animation:    argh-my-eyes 1s infinite;
+  animation:         argh-my-eyes 1.5s infinite;
+}

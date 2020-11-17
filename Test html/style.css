@@ -39,4 +39,24 @@ h6{
     text-align: left;
     color: #dee4e7
 }
+a{
+    color: white;
+    border: 8px white;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px;
+    text-decoration: none;
+}
+header{
+    background-color: grey;
+}
+nav{
+    background-color: grey;
+}
+main{
+    background-color: grey;
+}
+footer{
+    background-color: grey;
+}
 
