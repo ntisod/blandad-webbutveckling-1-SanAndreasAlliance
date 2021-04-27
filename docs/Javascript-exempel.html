@@ -5,10 +5,30 @@
     <title>Document</title>
 </head>
 <body>
-    <!--Den här filen har skapats av mig 2021-03-22 -->
     <button type="button" onclick="alert('Andreas har skapat den här sidan')">Klicka här!</button>
     <!--Den här filen har skapats av mig 2021-03-22 -->
-    <script src="javascript.js"></script>
-    <button type="button" onclick="authorDialog()">Klicka här!</button>
+    <script src="javascript-exempel.js"></script>
+    <button type="button" onclick="authorDialog()">Visa dialog</button>
+
+    <p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut impedit laborum dolore numquam, possimus quisquam fuga error. Vitae asperiores voluptatem ducimus minus, velit harum pariatur in exercitationem ut reiciendis at.</p>
+    
+
+    <form>
+        <label for="fnamn">Förnamn</label> 
+        <input type="text" id="fnamn">
+        <input type="button" value="Klicka här" onclick="writeText()">
+        <br>
+        <br>
+        Num 1<input type="text" id="num1">
+        <br>
+        <br>
+        Num 2<input type="text" id="num2">
+        <br>
+        <br>
+        <button onclick="calculate()">Calculate</button>
+    </form>
+    <p id="text"></p>
+
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
 </body>
 </html>
