@@ -3,12 +3,23 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
+    <link rel="stylesheet" type="text/css" href="recept.css">
     Kokta Majskolvar
     </title>
     </head>
-
     <body>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://ntisod.github.io/blandad-webbutveckling-1-SanAndreasAlliance/">Home</a>
+            <a href="https://ntisod.github.io/blandad-webbutveckling-1-SanAndreasAlliance/ommig.html">About</a>
+            <a href="">Recipe</a>
+            <a href="#">Formular</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776; </button>
+          </div>
+
     <h1>Kokta majskolvar</h1>
 	
 	<img src="Majskolvar.jpg" alt="Kokta majskolvar" width="300" height="250"><br>
@@ -60,6 +71,18 @@
     <p>
     <small>Sida gjort av Andreas Yousef</small>
     </p>
+    
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
     
 	</body>
 	</html>
