@@ -19,6 +19,7 @@
     padding: 15px;
     border: 1px solid rgb(255, 0, 191);
   }
+  
 
   .row::after {
     content: "";
@@ -45,7 +46,7 @@ h2{
 }
 body{
     background-color: #37474F;
-    font-family: Impact, Haettenschweiler, 'Arial Nasrrow Bold', sans-serif; font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Nasrrow Bold', sans-serif; font-size: 15px;
 }
 p{
     color: #dee4e7;
