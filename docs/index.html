@@ -8,19 +8,19 @@
     <script src="https://kit.fontawesome.com/3cf45c56df.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href=".">Home</a>
-        <a href="ommig.html">About</a>
-        <a href="recept.html">Recipe</a>
-        <a href="formulär.html">Formular</a>
+  <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href=".">Home</a>
+      <a href="ommig.html">About</a>
+      <a href="recept.html">Recipe</a>
+      <a href="formulär.html">Formular</a>
+  </div>
+    
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; </button>
     </div>
-      
-      <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776; </button>
-      </div>
 
-<div class="prof-box">
+  <div class="prof-box">
     <img src="guy1.png" alt="guy1" class="prof-pic">
     <h1 class="glow">Andreas Yousef</h1>
     <div class="line-break"></div>
@@ -31,19 +31,19 @@
         <a href="https://github.com/ntisod/blandad-webbutveckling-1-SanAndreasAlliance" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.instagram.com/andreasyousef_/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://twitter.com/AndreasYousef_/with_replies" target="_blank"><i class="fab fa-twitter"></i></a>
-</div>
+    </div>
     <p>© Copyright 2021 Andreas Yousef</p>
-
-      <script>
-        function openNav() {
-          document.getElementById("mySidebar").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidebar").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-        }
-      </script>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+  </script>
 </body>
 </html>
