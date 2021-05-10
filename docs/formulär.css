@@ -1,0 +1,237 @@
+:root{
+    --knapp: #395c85;
+    --knappöver: #244b78;
+    --bakgrundliten: #588db8;
+    --bakgrund: #cadcf8;
+    --textfält: #9faecf;
+    /*--text: #290e19;*/
+    --text: white;
+    /*blåt, gult, vitt, grått*/
+}
+
+
+input[type=button] {
+    /*background-color: #4CAF50;*/
+    background-color: var(--knapp);
+    border: none;
+    color: var(--text);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+  /*background-color: #45a049;*/
+  background-color: var(--knappöver);
+}
+
+div {
+  border-radius: 5px;
+  background-color: var(--bakgrundliten);
+  padding: 20px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #59253a;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: var(--textfält);
+  color: var(--text);
+}
+
+body{
+    max-width: 8cm;
+    text-align: center;
+    margin-left: 40%;
+    background-image: linear-gradient(120deg,#5483D5 , #F1624C );
+}
+
+.fadeout {
+  color: black;
+  background-color: var(--bakgrundliten);
+  font-size: medium;
+  font-family: helvetica;
+  text-align: center;
+  opacity: 0;
+    -webkit-animation: fadeout 10s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout 10s; /* Firefox < 16 */
+        -ms-animation: fadeout 10s; /* Internet Explorer */
+         -o-animation: fadeout 10s; /* Opera < 12.1 */
+            animation: fadeout 10s;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+#section1 {
+    height: 690px;
+    
+    background-color: var(--bakgrundliten);
+}
+
+#section2 {
+    height: 690px;
+    background-color: var(--bakgrundliten);
+}
+
+#section3 {
+    height: 690px;
+    background-color: var(--bakgrundliten);
+}
+
+a{
+    /*background-color: #4CAF50;*/
+    background-color: var(--knapp);
+    border: none;
+    color: var(--text);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a:hover{
+    /*background-color: #45a049;*/
+    background-color: var(--knappöver);
+}
+
+input{
+    background-color: var(--textfält);
+}
+
+p, label, h1, h2, h3{
+    color: var(--text);
+}
+
+::placeholder{
+    color: var(--text);
+}
+.navbar {
+    overflow: hidden;
+    background-color:rgba(0,0,0,0.2);
+    width: 450px;
+    margin: 0 auto;
+    padding: 0 40px;
+    
+}  
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+.subnav {
+    float: left;
+    overflow: hidden;
+} 
+.subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+} 
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color:rgba(0,0,0,0.2);
+} 
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 29%;
+    background-color:black ;
+    width: 450px;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0 40px;
+}  
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+  
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+  
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+ /* The sidebar menu */
+ .sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f39f32;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
